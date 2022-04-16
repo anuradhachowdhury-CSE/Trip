@@ -16,7 +16,7 @@
             }
 
             25% {
-                bottom: -170px;
+                bottom: -100px;
             }
 
             50% {
@@ -29,7 +29,7 @@
             }
 
             100% {
-                bottom: -200px;
+                bottom: -110px;
                 background-image: linear-gradient(rgb(126, 118, 118), orange);
             }
 
@@ -44,15 +44,16 @@
             position: relative;
             bottom: 0px;
             left: 200px;
-            animation: sliding 5s linear 0s infinite alternate;
+            animation: sliding 4s linear 0s infinite alternate;
             box-shadow: 10px 0px 30px 30px orange;
         }
 
         .field {
-            height: 100vh;
+            height: 600px;
             /* height: 600px; */
             background-image: url(image/photo-1508893269700-a6c62c0610a2.avif);
             background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
         }
         .card{
@@ -64,12 +65,13 @@
         grid-template-columns: repeat(3,1fr);
         padding: 50px;
         }
-       
+     
     </style>
 </head>
 
 <body>
     <header>
+
         <div class="field">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
@@ -88,11 +90,10 @@
                     <a style="color:white" target="_blank" class="nav-link bg-warning" href="Packages.html">Packages</a>
                 </li>
                 
-                <!-- <form class="d-flex nav-item bg-warning">
-                  <input class="form-control" type="search" placeholder="Search" aria-label="Search"> -->
-                  <!-- <button id="btn" class="d-flex bg-warning rounded-pill btn btn-outline-success " type="submit">Sign Up</button> -->
+               
             </ul> 
-            <h1 style="padding-top:10px;color:white;padding-left: 10px">Welcome to our page</h1>
+
+            <h1 class="welcome"style="padding-top:10px;color:white;padding-left: 10px">Welcome to our page</h1>
 
             <p class="fs-3" style="color:white;display: flex;flex-wrap: wrap;padding-top:10px;padding-left: 10px">We are
                 extending a helping hand<br>so that you can enjoy your trip</p>
@@ -101,6 +102,7 @@
             <div class="sun"></div>
         </div>
     </header>
+   
     <main>
         <section class="Top-cities">
             <h1 style="padding-left:20px;padding-top:20px">Top 8 popular cities</h1>

@@ -21,20 +21,21 @@
             }
 
             100% {
-                bottom: -200px;
+                bottom: -100px;
             }
         }
 
         @keyframes plane {
             0% {
-                bottom: 40px;
+                
+                bottom: 100px;
             }
 
             50% {
-                transform: translate(-100px, -500px);
+                transform: translate(-300px, -500px);
                 transition: tranform 2s ease 0.3s;
             }
-
+            
 
         }
 
@@ -52,17 +53,18 @@
         }
 
         .field {
-            height: 100vh;
+            height: 600px;
             /* height: 600px; */
             background-image: url(image/orange-golden-evening-sky-black-landscape-foreground-sparkling-clouds-formation-shows-tree-silhouette-174065707.jpg);
             background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
         }
 
         .Aeroplane {
             position: absolute;
             /* top:20px; */
-            margin-left: 400px;
+            margin-left: 500px;
             bottom: 90px;
             animation: plane 5s linear 0s infinite alternate-reverse;
         }
